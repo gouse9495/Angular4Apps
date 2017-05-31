@@ -6,7 +6,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavComponent } from './nav.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { SearchComponent } from './header/search/search.component';
+
+
 
 
 
@@ -16,6 +19,9 @@ import { NavComponent } from './nav.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
+    SearchComponent,
+    
+   
    
    
   ],

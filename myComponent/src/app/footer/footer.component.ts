@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template:`
-  <p class="footer"> Copyright
-  <a href="www.github.com">GITHUB </a>
-  </p>
+  <div class="footer">
+  <app-nav></app-nav>
+  <a href="www.github.com">GITHUB </a> 
+  </div>
   `,
    styles:[
     `.footer{
