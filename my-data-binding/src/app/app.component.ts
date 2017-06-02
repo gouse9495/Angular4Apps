@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  appName = 'app works!';
+  projectTitle = 'My DataBinding Project!';
+  myName ="Gouse";
+  age=30;
+
+  contactDetails = [
+    9493248668,156267
+  ]
+
+ageLater(){
+  return this.age + 40;
+}
+ 
 }
