@@ -1,0 +1,23 @@
+<p>
+  prop-binding works!
+</p>
+
+<input type="text" value="Gouse"> <!-- Text input with static value -->
+<input type="text" value="{{age}}"> <!-- Text input with String interpolation -->
+
+<!-- Property Binding-->
+
+<h3> Property Binding </h3>
+<input type="text" [value]="age"> <!-- Property Binding doing it in exiting html.. [] this is property binding operator -->
+
+<h4> Property Binding on Directive </h4>
+<p class="text-red">Example1</p> <!-- A simple CSS styling through html attribute -->
+
+<p ngClass="text-red">Example2</p> <!-- We are gng to have styling through angular -->
+
+<p [ngClass]="text-red">Example3</p> <!-- This will not work as angular doesn't know where text-red expresion is' -->
+<p [ngClass]="{'text-red': true}">Example4</p> <!-- This will  work as angular  knows where text-red expresion is with single curly braces' -->
+<p [ngClass]="{'text-red': isRed()}">Example5</p> <!-- This will  work as angular  knows where text-red expresion is with single curly braces' -->
+
+
+
