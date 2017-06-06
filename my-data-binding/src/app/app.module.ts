@@ -5,11 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { PropBindingComponent } from './prop-binding/prop-binding.component';
+import { CustomPbComponent } from './custom-pb/custom-pb.component';
+import { EvtBindingComponent } from './evt-binding/evt-binding.component';
+import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropBindingComponent
+    PropBindingComponent,
+    CustomPbComponent,
+    EvtBindingComponent,
+    TwowayBindingComponent
   ],
   imports: [
     BrowserModule,
