@@ -1,0 +1,21 @@
+<h3>
+  Attribute- Directive Example
+</h3>
+<h4>
+  ngClass
+</h4>
+
+<p [ngClass]="{'red': isError(),'blue':!isError()}"> This is example for ngClass</p> <!--Example of function -->
+
+<p [ngClass]="{'red': isauth,'blue':!isAuth}"> This is example for ngClass</p> <!--Example for variable -->
+
+
+<hr>
+<h5>ngStyle</h5>
+
+<div [ngStyle]="{'color':myColor}">
+  Text appear what i type
+</div>
+
+<input type="text" [(ngModel)]="myColor">
+
