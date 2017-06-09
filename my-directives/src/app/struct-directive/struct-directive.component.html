@@ -1,0 +1,46 @@
+<h2>
+ *ngIF structural-directive 
+</h2>
+
+<p>It's {{isAuth}}</p>
+
+<div *ngIf="!isAuth">
+  Please LogIn
+  <input type="button" value="Login" (click)="onLogin()">
+</div>
+<div *ngIf="isAuth">
+  Logged in Successfuly..
+</div>
+
+<h2>
+ *ngFor structural-directive 
+</h2>
+
+<!-- Just for Example as Javascript static
+<ul>
+  <li>{{menu1}}</li>
+  <li>{{menu2}}</li>
+  <li>{{menu3}}</li>
+  <li>{{menu4}}</li>
+  <li>{{menu5}}</li>
+</ul> -->
+
+<ul>
+  <li *ngFor="let item of navMenus; let i=index;" >
+    <span *ngIf="i==0" style="color:red;">
+      {{item}}
+    </span>
+    <span *ngIf="i!=0"> 
+      {{item}}
+    </span>
+  </li>
+</ul>
+
+<div>
+<h2>ngSwitch</h2>
+<div [ngSwitch]="age">
+  <p *ngSwitchCase="10">Age is {{age}}</p>
+  <p *ngSwitchCase="20">Age is {{age}}</p>
+  <p *ngSwitchDefault>Age is default</p>
+</div>
+</div>
