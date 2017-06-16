@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  onSubmitClick(f){
-    console.log("SubmitClick Works");
+  onSubmitClick(form){
+    console.log(form);
   }
 }
