@@ -7,11 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const APP_ROUTES: Routes = [
 { path: '', component: HomeComponent },
-{ path: 'products', component: ProductsComponent }
-
+{ path: 'products', component: ProductsComponent, data: { title: "ProductsPage"} },
+{ path:'**', component: PageNotFoundComponent }
 ]
 
 
@@ -19,7 +20,8 @@ const APP_ROUTES: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
